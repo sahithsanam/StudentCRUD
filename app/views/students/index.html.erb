@@ -1,0 +1,26 @@
+<h1>Students</h1>
+<table border>
+<tr>
+ <td><ul>NAME</ul></td>
+ <td><ul>ROLL NUMBER   </ul></td>
+ <td><ul>AGE   </ul></td>
+ <td><ul>UPDATE</ul></td>
+ <td><ul>DELETE</ul></td>
+ 
+ </tr>
+<% @students.each do |std| %>
+ 
+ <tr>
+ <td><li><%= link_to std.name, student_path(std) %></li></td>
+ <td><li><%= link_to std.roll_no, student_path(std) %></li></td>
+ <td><li><%= link_to std.age, student_path(std) %></li></td>
+ <td> <%= button_to "Edit",edit_student_path(std),method:"get"%></td>
+ <td> <%= button_to "Remove",student_path(std),method:"delete",data:{confirm: "Are tpu sure?"}%></td>
+ </tr>
+<% end %>
+<%= link_to "Add new student",new_student_path %><br><br>
+<%= form_with(url: students_path, method: "get", local: true) do %>
+    <%= text_field_tag :query, params[:query], placeholder: "Search students..." %>
+    <%= submit_tag "Search" %>
+  <% end %><br>
+</table>
