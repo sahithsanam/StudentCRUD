@@ -1,27 +1,31 @@
 /* app/assets/stylesheets/custom.css */
 
+
+
+/* Navbar styles */
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
-  .navbar-brand {
-    color: #fff;
-    font-size: 24px;
-  }
-  
-  .navbar-nav li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .navbar-nav li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .navbar-nav li a:hover {
-    text-decoration: underline;
-  }
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Padding */
+}
+
+.navbar-brand {
+  color: #fff; /* Text color */
+  font-size: 24px; /* Font size */
+}
+
+.navbar-nav li {
+  display: inline-block; /* Display inline */
+  margin-right: 10px; /* Spacing between navbar items */
+}
+
+.navbar-nav li a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
   

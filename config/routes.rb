@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # get 'students/show'
   # get 'students/edit'
   # get 'students/new'
+  #root 'students#index'
+  root 'students#index'
   resources :students
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -1,12 +1,11 @@
-<!-- app/views/layouts/_navbar.html.erb -->
-
 <nav class="navbar">
   <div class="container">
     <div class="navbar-header">
-      <%= link_to "Home", students_path, class: "navbar-brand" %>
-    </div>
-    <ul class="nav navbar-nav">
+      <%= link_to "Home", root_path, class: "navbar-brand" %>
+      <ul class="nav navbar-nav">
+      <li><%= link_to "Search Student", students_path %></li>
       <li><%= link_to "Add Student", new_student_path %></li>
     </ul>
+    </div>
   </div>
 </nav>
