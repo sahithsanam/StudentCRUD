@@ -1,11 +1,9 @@
 <h1>Students</h1>
 
-
-
 <table class="student-table" border="1">
   <thead>
     <tr>
-      <th>Name</th>
+      <th class="dark-column">Name</th>
       <th>Roll Number</th>
       <th>Age</th>
       <th>Update</th>
@@ -31,3 +29,4 @@
   <%= text_field_tag :query, params[:query], placeholder: "Search students..." %>
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
+

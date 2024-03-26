@@ -1,7 +1,10 @@
-<h3>UPDATE A  STUDENT</h3>
-<%= form_with model: @student do |f|%>
-<%= f.text_field :name,placeholder:"Enter Your Name"%><br>
-<%= f.text_field :roll_no,placeholder:"Enter Your Roll No"%><br>
-<%= f.text_field :age,placeholder:"Enter Your age"%><br>
-<%= f.submit %>
+
+
+<h3>UPDATE A STUDENT</h3>
+
+<%= form_with(model: @student, local: true) do |f| %>
+  <%= f.text_field :name, class: "form-control", placeholder: "Enter Your Name" %><br>
+  <%= f.text_field :roll_no, class: "form-control", placeholder: "Enter Your Roll No" %><br>
+  <%= f.text_field :age, class: "form-control", placeholder: "Enter Your Age" %><br>
+  <%= f.submit "Update", class: "btn btn-primary" %>
 <% end %>

@@ -1,0 +1,10 @@
+/* Custom CSS for the form */
+.name-label {
+    font-size: 24px; /* Bigger font size */
+    color: #333; /* Darker color */
+  }
+  
+  .name-input {
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
